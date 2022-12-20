@@ -46,7 +46,7 @@ function Fslider() {
 
     const productTemplate = (product) => {
         return (
-            <div style={{direction: 'ltr' , position:"relative", top: "100px"}} className="product-item p-0">
+            <div style={{direction: 'ltr' , }} className="product-item p-0">
                 <div className="product-item-content p-0 m-0 b-0">
                     <div className="mb-0">
                         <img style={{width:'100%',height:'420px'}} src={product.image} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={product.name}  />
@@ -58,9 +58,9 @@ function Fslider() {
     }
 
   return (
-    <div  style={{direction: "ltr"}} className="carousel-demo">
-        <div className="card h-3">
-            <Carousel className= 'h-30rem' value={products} numVisible={1} numScroll={1} responsiveOptions={responsiveOptions}
+    <div  style={{direction: "ltr",position:"relative", top: "100px"}} className="card carousel-demo">
+        <div style={{paddingLeft: "16%"}} className="w-10">
+            <Carousel className= 'h-45rem' value={products} numVisible={1} numScroll={1} responsiveOptions={responsiveOptions}
                 itemTemplate={productTemplate} header={""} />
         </div>
     </div>

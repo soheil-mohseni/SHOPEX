@@ -33,7 +33,7 @@ const Navbar = () => {
  console.log("222222",selectedNodeKey2) 
   return (
     <>
-    <div style={{width: "100%",}} class="card fixed  z-1 justify-content-center">
+    <div style={{width: "100%",backgroundColor:'white'}} class="card fixed  z-1 justify-content-center">
       <div style={{width: "100%",height:"66%",marginTop:"10px"}} class="flex card-container m-0 blue-container mt-1 justify-content-center overflow-hidden">
           <div style={{minWidth: "65%",height:"66%",marginTop:"10px",}} class="flex-none  m-0 flex h-4rem bg-blue500 align-items-center justify-content-between font-bold text-white border-round ">
           <Button icon="pi pi-align-justify" onClick={() => setVisibleRight(true)} className="sm:hidden ml-0 inline" />
